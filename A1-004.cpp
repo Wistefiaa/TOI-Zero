@@ -1,10 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int q, m, f; //MAX = 100
+    int q, m, f;
     cin>>q>>m>>f;
-    if((q+m+f)>=50){
-        cout<<"pass";
+    if(q<5){
+        cout<<"fail";
+        goto a;
     }
-    else cout<<"fail";
+    if(m<20){
+        cout<<"fail";
+        goto a;
+    }
+    if(f<25){
+        cout<<"fail";
+        goto a;
+    }
+    cout<<"pass";
+    a:
+    return 0;
 }
